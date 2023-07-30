@@ -5,6 +5,7 @@
 body {
   font-family: "Mulish", sans-serif;
   background-color: #F5FAFE;
+  color: #333333;
 }
 
 .container {
@@ -22,9 +23,9 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-
-.logo {
-  margin-right: -200px;
+.header__search {
+  margin-right: auto;
+  margin-left: 108px;
 }
 
 .search {
@@ -72,7 +73,7 @@ body {
   margin-right: 18px;
 }
 .user__name {
-  color: var(--gray-1, #333);
+  color: #333333;
   font-family: Mulish;
   font-size: 14px;
   font-style: normal;
