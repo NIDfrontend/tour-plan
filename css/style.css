@@ -4,4 +4,9 @@
 
 body {
   font-family: "Mulish", sans-serif;
+}
+
+.container {
+  padding: 0 166px 0 166px;
+  margin: auto;
 }/*# sourceMappingURL=style.css.map */
