@@ -476,6 +476,10 @@ template {
   flex-wrap: wrap;
   align-items: center;
 }
+.hotel-grid {
+  display: flex;
+  justify-content: space-between;
+}
 
 .stars {
   flex-basis: 100%;
@@ -551,6 +555,69 @@ template {
 }
 .slider-button--prev {
   left: 18px;
+}
+
+.booking {
+  border-radius: 8px;
+  background: #0A223D;
+  color: #fff;
+  width: 350px;
+  min-height: 210px;
+  padding: 28px;
+}
+.booking__info {
+  display: flex;
+  justify-content: space-between;
+}
+.booking__price {
+  display: flex;
+  flex-direction: column;
+}
+.booking__start {
+  font-size: 10px;
+  line-height: 14px;
+}
+.booking__pricetag {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+}
+.booking__per-room {
+  font-size: 12px;
+  line-height: 16px;
+}
+.booking__room {
+  margin-top: 4px;
+}
+.booking__text {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.booking__description {
+  margin-left: 9px;
+}
+.booking__call-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.booking.__heading {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+}
+.booking__number {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.booking__num {
+  margin-left: 8px;
 }
 
 @media (max-width: 1200px) {
