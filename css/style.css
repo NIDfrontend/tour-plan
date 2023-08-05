@@ -635,7 +635,7 @@ template {
   line-height: 25px;
 }
 .booking__num {
-  margin-left: 8px;
+  margin-left: -36px;
 }
 .booking__button {
   color: #FFF;
@@ -796,5 +796,8 @@ template {
   }
   .slider {
     height: 250px;
+  }
+  .booking__num {
+    margin-left: 20px;
   }
 }
