@@ -100,7 +100,8 @@ img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-right: 18px;
 }
 .user__name {
@@ -186,7 +187,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -659,6 +661,89 @@ template {
   overflow: hidden;
 }
 
+.newsletter {
+  position: relative;
+  padding: 98px 0 87px 0;
+  background-image: url(../image/newsletter-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.newsletter:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 34, 61, 0.8);
+}
+.newsletter-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 731px;
+  margin: auto;
+}
+.newsletter-title {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-family: Mulish;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.newsletter-title__strong {
+  font-family: Mulish;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.subscribe {
+  position: relative;
+  width: 350px;
+  height: 55px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.subscribe__input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-left: 33px;
+  padding-right: 75px;
+  border: none;
+  font-family: Mulish;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.subscribe__button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  min-width: 65px;
+  height: 100%;
+  border-radius: 0px 4px 4px 0px;
+  background-color: #EC1F46;
+  border: none;
+  color: #FFF;
+  font-family: Mulish;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -669,11 +754,13 @@ template {
   .swiper-slide__image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media (max-width: 992px) {
-  .container {
+  .container,
+  .newsletter-wrapper {
     max-width: 700px;
   }
   .logo {
@@ -718,7 +805,7 @@ template {
 @media (max-width: 768px) {
   .container {
     max-width: 576px;
-    width: 92%;
+    width: 100%;
   }
   .navbar__search, .navbar__user {
     display: none;
@@ -789,8 +876,21 @@ template {
     height: 350px;
     margin-bottom: 20px;
   }
+  .newsletter {
+    max-width: 576px;
+    width: 100%;
+  }
+  .newsletter-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 18px;
+  }
 }
 @media (max-width: 576px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .logo {
     width: 99px;
   }
@@ -800,4 +900,16 @@ template {
   .booking__num {
     margin-left: 20px;
   }
-}
+  .subscribe {
+    width: 100%;
+  }
+  .newsletter {
+    padding: 76px 20px 83px 20px;
+  }
+  .newsletter-title {
+    font-size: 20px;
+  }
+  .newsletter-title__strong {
+    font-size: 30px;
+  }
+}/*# sourceMappingURL=style.css.map */
