@@ -1,10 +1,10 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.hotel-slider', {
 
   loop: true,
 
   navigation: {
-    nextEl: '.slider-button--next',
-    prevEl: '.slider-button--prev',
+    nextEl: '.hotel-slider__button--next',
+    prevEl: '.hotel-slider__button--prev',
   },
  
 });
