@@ -765,7 +765,7 @@ template {
   background-color: #fff;
   border-radius: 8px;
   padding: 0 62px 30px;
-  width: 730px;
+  max-width: 730px;
   margin: 45px auto 0;
   position: relative;
 }
@@ -858,10 +858,10 @@ template {
   .container {
     max-width: 960px;
   }
-  .slider {
+  .hotel__slider {
     width: 600px;
   }
-  .swiper-slide__image {
+  .hotel-slider__image {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
@@ -901,7 +901,7 @@ template {
   .hotel-right {
     flex-direction: row;
   }
-  .slider {
+  .hotel-slider {
     width: 100%;
   }
   .booking {
@@ -910,6 +910,13 @@ template {
   }
   .map {
     width: 340px;
+  }
+  .reviews__title {
+    margin-bottom: 50px;
+    font-size: 30px;
+  }
+  .reviews-slider__item {
+    max-width: 580px;
   }
 }
 @media (max-width: 768px) {
@@ -966,6 +973,10 @@ template {
     order: -1;
     margin-left: 0;
   }
+  .hotel-slider {
+    height: 350px;
+    margin-bottom: 20px;
+  }
   .hotel-right {
     flex-direction: column;
   }
@@ -982,10 +993,6 @@ template {
   .map {
     width: 100%;
   }
-  .slider {
-    height: 350px;
-    margin-bottom: 20px;
-  }
   .newsletter {
     max-width: 576px;
     width: 100%;
@@ -994,6 +1001,29 @@ template {
     flex-direction: column;
     align-items: flex-start;
     padding-left: 18px;
+  }
+  .reviews__title {
+    margin-bottom: 50px;
+    font-size: 30px;
+  }
+  .reviews-slider__item {
+    padding: 0 30px 30px;
+  }
+  .reviews-slider__item:after, .reviews-slider__item:before {
+    display: none;
+  }
+  .reviews-slider__button {
+    top: 32px;
+  }
+  .reviews-slider__button--prev {
+    left: 50%;
+    margin-left: -65px;
+    transform: translate(-50%, 0);
+  }
+  .reviews-slider__button--next {
+    right: 50%;
+    margin-right: -65px;
+    transform: translate(50%, 0);
   }
 }
 @media (max-width: 576px) {
@@ -1004,7 +1034,7 @@ template {
   .logo {
     width: 99px;
   }
-  .slider {
+  .hotel-slider {
     height: 250px;
   }
   .booking__num {
@@ -1021,5 +1051,9 @@ template {
   }
   .newsletter-title__strong {
     font-size: 30px;
+  }
+  .reviews__title {
+    margin-bottom: 40px;
+    font-size: 18px;
   }
 }/*# sourceMappingURL=style.css.map */

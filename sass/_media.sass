@@ -1,10 +1,10 @@
 @media  (max-width: 1200px)
     .container
         max-width: 960px
-    .slider
+    .hotel__slider
       width: 600px
-    .swiper
-      &-slide
+    .hotel
+      &-slider
         &__image
           width: 100%
           height: 100%
@@ -35,13 +35,22 @@
         margin-bottom: 30px
       &-right
         flex-direction: row
-    .slider
-      width: 100%
+      &-slider
+        width: 100%
+    
     .booking
       margin-right: 20px
       width: 340px
     .map
       width: 340px
+    .reviews
+      &__title
+         margin-bottom: 50px
+         font-size: 30px
+      &-slider
+        &__item
+          max-width: 580px
+
 @media  ( max-width: 768px )
     .container
         max-width: 576px
@@ -90,6 +99,9 @@
             &__offer
                 order: -1
                 margin-left: 0
+        &-slider
+          height: 350px
+          margin-bottom: 20px
         &-right
           flex-direction: column    
     .booking
@@ -102,9 +114,7 @@
     .map
       width: 100%  
      
-    .slider
-      height: 350px
-      margin-bottom: 20px
+    
     .newsletter
       max-width: 576px
       width: 100%
@@ -112,6 +122,27 @@
         flex-direction: column
         align-items: flex-start
         padding-left: 18px
+    .reviews
+      &__title
+        margin-bottom: 50px
+        font-size: 30px
+      &-slider
+        &__item
+          padding: 0 30px 30px
+          &:after, &:before
+            display: none
+        &__button
+          top: 32px
+          
+          
+          &--prev
+            left: 50%
+            margin-left: -65px
+            transform: translate(-50%, 0)
+          &--next
+            right: 50%
+            margin-right: -65px
+            transform: translate(50%, 0)
 
 
 @media ( max-width: 576px )
@@ -120,8 +151,9 @@
       padding-right: 20px  
     .logo
         width: 99px
-    .slider
-      height: 250px
+    .hotel
+      &-slider
+        height: 250px
     .booking
       &__num
         margin-left: 20px
@@ -133,6 +165,11 @@
         font-size: 20px
         &__strong
           font-size: 30px
+    .reviews
+      &__title
+        margin-bottom: 40px
+        font-size: 18px
+          
             
       
    
