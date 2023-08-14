@@ -856,46 +856,62 @@ template {
   max-width: 537px;
 }
 
-.active__title {
+.activities {
+  padding: 60px 0 98px;
+}
+.activities__title {
+  color: #0A223D;
   font-family: Mulish;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
-  margin-bottom: 60px;
+  margin-bottom: 56px;
 }
-.active__map {
+.activities-wrapper {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
-.active-item {
-  width: 255px;
-  height: 255px;
-  padding-top: 143px;
-  padding-bottom: 24px;
-  padding-left: 26px;
-  padding-right: 84px;
+
+.card {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  padding: 24px 26px;
+  width: 255px;
+  height: 255px;
   border-radius: 6px;
-  background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, #0A223D 100%);
+  position: relative;
+  overflow: hidden;
 }
-.active-item__text {
+.card__image {
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.card__title {
   color: #fff;
   font-family: Mulish;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin-top: auto;
   margin-bottom: 18px;
 }
-.active-item__button {
-  width: 100px;
-  height: 30px;
+.card__button {
   border-radius: 4px;
   background-color: #EC1F46;
+  padding: 7px 22px 7px 22px;
   color: #fff;
   font-family: Nunito;
   font-size: 12px;
@@ -903,6 +919,18 @@ template {
   font-weight: 600;
   line-height: normal;
   border: none;
+  z-index: 10;
+  cursor: pointer;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, #0A223D 100%);
+  z-index: -1;
 }
 
 @media (max-width: 1200px) {
@@ -917,6 +945,10 @@ template {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .card {
+    width: 230px;
+    height: 230px;
   }
 }
 @media (max-width: 992px) {
@@ -968,6 +1000,19 @@ template {
   }
   .reviews-slider__item {
     max-width: 580px;
+  }
+  .activities {
+    padding-bottom: 70px;
+  }
+  .activities-wrapper {
+    flex-wrap: wrap;
+  }
+  .activities__card {
+    margin-bottom: 20px;
+  }
+  .card {
+    width: 340px;
+    height: 250px;
   }
 }
 @media (max-width: 768px) {
@@ -1076,6 +1121,10 @@ template {
     margin-right: -65px;
     transform: translate(50%, 0);
   }
+  .card {
+    width: 48%;
+    height: 255px;
+  }
 }
 @media (max-width: 576px) {
   .container {
@@ -1106,5 +1155,14 @@ template {
   .reviews__title {
     margin-bottom: 40px;
     font-size: 18px;
+  }
+  .card {
+    width: 100%;
+  }
+  .activities {
+    padding-bottom: 60px;
+  }
+  .activities__title {
+    margin-bottom: 40px;
   }
 }/*# sourceMappingURL=style.css.map */

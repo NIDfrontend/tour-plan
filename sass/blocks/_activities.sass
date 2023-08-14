@@ -1,0 +1,71 @@
+.activities
+    padding: 60px 0 98px
+    &__title
+        color: $dark
+        font-family: Mulish
+        font-size: 24px
+        font-style: normal
+        font-weight: 700
+        line-height: normal
+        text-transform: uppercase
+        margin-bottom: 56px
+        
+    &-wrapper
+        display: flex
+     
+        justify-content: space-between
+.card
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    padding: 24px 26px
+    width: 255px
+    height: 255px
+    border-radius: 6px
+    position: relative
+    overflow: hidden
+    &__image
+        position: absolute
+        z-index: -2
+        width: 100%
+        height: 100%
+        object-fit: cover
+        border-radius: 6px
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+    &__title
+        color:$light
+        font-family: Mulish
+        font-size: 16px
+        font-style: normal
+        font-weight: 700
+        line-height: normal
+        margin-top: auto
+        margin-bottom: 18px
+        
+    &__button
+      
+        border-radius: 4px
+        background-color: $primary
+        padding: 7px 22px 7px 22px
+        color:$light
+        font-family: Nunito
+        font-size: 12px
+        font-style: normal
+        font-weight: 600
+        line-height: normal
+        border: none
+        z-index: 10
+        cursor: pointer
+        
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        bottom: 0
+        right: 0
+        left: 0
+        background: linear-gradient(180deg, rgba(196, 196, 196, 0.00) 0%, #0A223D 100%)
+        z-index: -1
