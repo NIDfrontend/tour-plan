@@ -69,8 +69,8 @@ img {
   width: 350px;
   height: 40px;
   border-radius: 6px;
-  background: #F5FAFE;
-  border-color: #F5FAFE;
+  background: #eaf6ff;
+  border-color: #eaf6ff;
   border-style: none;
   font-size: 12px;
   line-height: 15px;
@@ -1020,10 +1020,20 @@ template {
     max-width: 576px;
     width: 100%;
   }
+  body {
+    padding-top: 78px;
+  }
+  .navbar__mobile_fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 6;
+  }
   .navbar__search, .navbar__user {
     display: none;
   }
-  .navbar-menu {
+  .navbar-bottom {
     display: none;
   }
   .search__input {
