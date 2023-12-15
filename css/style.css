@@ -1055,7 +1055,7 @@ template {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  color: #BDBDBD;
+  color: #E0E0E0;
   margin-left: 278px;
 }
 .footer__info {
@@ -1097,6 +1097,20 @@ template {
   .card {
     width: 230px;
     height: 230px;
+  }
+  .footer__input {
+    flex-basis: 100%;
+  }
+  .footer__message {
+    width: 256px;
+  }
+  .footer__form {
+    position: relative;
+  }
+  .footer__button {
+    position: absolute;
+    left: -1px;
+    top: 264px;
   }
 }
 @media (max-width: 992px) {
