@@ -5,17 +5,37 @@
     padding-bottom: 46px
     &-wrapper
         display: grid
-        grid-template-columns: repeat(4, minmax(250px, 1fr))
+        grid-template-columns: repeat(4, minmax(min-content, 1fr))
+        grid-gap: 20px
+        grid-auto-rows: minmax(40px, min-content)
+        align-items: start
+    &__legal
+        margin-left: 50px
     &__logo
+        width: 166px
         grid-row: 1 / 3
+        align-self: center
     &__categories
-        grid-row: 1 / 3
+        grid-row: 1 / 4
     &__social
+        &-links
+            display: flex
+            align-items: center
+            min-width: 83px
+            justify-content: space-between 
         &-network
-            grid-row: 2 / 3
+            display: flex
+            align-content: start
+            
+            grid-row: 2 / 4
             grid-column: span 2
-    &__contact-details
-        grid-column: span 2 
+    &__contact
+        &-details
+            grid-column: span 2 
+        &-form
+            grid-column: span 2
+    &__form
+        
     &__ul
         padding: 0
         margin: 0
@@ -24,16 +44,94 @@
         color: $light
         font-size: 18px
         font-style: normal
-        font-weight: 700
+        font-weight: bold
         line-height: 23px
         margin: 0 0 16px 0
         text-transform: uppercase
+        &--inline
+            margin: 0 43px 0 0 
     &__item
+        display: flex
+        align-items: flex-start
         font-size: 14px
         font-style: normal
         font-weight: 400
         line-height: 160%
         color: $footer-text
+        &--mb-2
+            margin-bottom: 20px
+    &__icon
+        margin-right: 20px
+        &-wrapper
+            min-width: 40px
+    &__text
+        color: $footer-text
+        margin-bottom: 22px
     &__link
         text-decoration: none
         color: inherit
+    &__input
+        background-color: $light
+        width: 255px
+        height: 50px
+        border-radius: 4px
+        border: none
+        padding-left: 23px
+        margin-bottom: 15px
+        flex-basis: 47%
+        margin-right: 22px
+    &__message
+        width: 539px
+        height: 123px
+        background-color: $light
+        border-radius: 4px
+        border: none
+        padding-top: 18px
+        padding-left: 24px
+        margin-bottom: 22px
+        resize: none
+      
+    &__button
+        width: 160px
+        height: 50px
+        color: $light
+        background-color: $primary
+        border-radius: 4px
+        border: none
+        margin-bottom: 95px
+    
+    &__required
+        margin-top: 15px
+        font-size: 12px
+        font-style: normal
+        font-weight: 700
+        line-height: normal
+        color: $footer-text
+        margin-left: 278px
+    &__info
+        grid-column: 2 / 5
+        &-wrapper
+            display: flex
+            margin-left: 135px
+            align-content: center
+        &-link
+            margin-right: 15px
+            text-decoration: none
+            color: $light
+            font-size: 12px
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+        &-pay
+            width: 136px
+            height: 22px
+            margin-left: 230px
+            
+           
+            
+        
+       
+            
+            
+
+        

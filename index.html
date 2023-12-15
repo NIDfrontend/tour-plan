@@ -444,30 +444,29 @@
           </div>
 
           <div class="footer__social-network">
-            <h3 class="footer__title">Social Network</h3>
+            <h3 class="footer__title footer__title--inline ">Social Network</h3>
             <div class="footer__social-links">
               <a href="" class="footer__link">
                 <img
                   src="image/facebook-icon.svg"
                   alt="Facebook icon"
-                  class="footer__icon"
                 />
               </a>
               <a href="" class="footer__link">
                 <img
                   src="image/youtube-icon.svg"
                   alt="Youtube icon"
-                  class="footer__icon"
                 />
               </a>
               <a href="" class="footer__link">
                 <img
                   src="image/instagram-icon.svg"
                   alt="Instagram icon"
-                  class="footer__icon"
+
                 />
               </a>
             </div>
+          </div>
 
             <div class="footer__list footer__legal">
               <h3 class="footer__title">LEGAL INFORMATION</h3>
@@ -493,22 +492,30 @@
                 Feel free to contact us by phone, email or by our contact form
               </p>
               <ul class="footer__ul">
-                <li class="footer__item">
-                  <img src="image/map-marker.svg" alt="Map marker icon" />9748
+                <li class="footer__item footer__item--mb-2">
+                  <div class="footer__icon-wrapper">
+                  <img src="image/map-marker.svg" class="footer__icon" alt="Map marker icon" />
+                </div>9748
                   Blossom Hill Rd undefined Lansing, Idaho 68545 United States
                 </li>
-                <li class="footer__item">
-                  <img src="image/contact-phone-call.svg" alt="Phone icon" />
+                <li class="footer__item footer__item--mb-2">
+                  <div class="footer__icon-wrapper">
+                  <img src="image/contact-phone-call.svg" class="footer__icon" alt="Phone icon" />
+                </div>
                   Tel (business hours) : 269 1500 <br />
                   Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
                   pm) <br />
                   Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
                 </li>
-                <li class="footer__item">
+                <li class="footer__item footer__item--mb-2">
+                  <div class="footer__icon-wrapper">
                   <img
                     src="image/email-icon.svg"
+                    class="footer__icon"
                     alt="Email icon"
-                  />cherly.lawson@example.com
+                  />
+                </div>
+                  cherly.lawson@example.com
                 </li>
               </ul>
             </div>
@@ -526,17 +533,26 @@
                   placeholder="Phone Number*"
                 />
                 <textarea
-                  class="footer__mesage"
+                  class="footer__message"
                   cols="30"
                   rows="10"
                   placeholder="Message"
+                  
                 ></textarea>
                 <button class="button footer__button" type="submit">
                   Send
                 </button>
-                <span class="footer__info"></span>
+                <span class="footer__required">* Required Fields</span>
               </form>
             </div>
+            <div class="footer__info">
+              <div class="footer__info-wrapper">
+              <a href="#" class="footer__info-link">Disclaimer</a>
+              <a href="#" class="footer__info-link">Conditions of use</a>
+              <a href="#" class="footer__info-link">Cancellation policy</a>
+              <img src="./image/pay-info.png" alt="Pay" class="footer__info-pay">
+            </div>
+            
           </div>
         </div>
       </div>
