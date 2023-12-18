@@ -14,15 +14,11 @@
       height: 230px
     .footer
       &__input
-        flex-basis: 100%
-      &__message
-        width: 256px
-      &__form
-        position: relative
-      &__button
-        position: absolute
-        left: -1px
-        top: 264px
+        width: auto
+      
+    
+       
+      
       
 @media  ( max-width: 992px )
     .container,
@@ -74,6 +70,58 @@
     .card
       width: 340px
       height: 250px
+    .footer
+      &__info
+        &-wrapper
+          margin-left: 0
+      &__required
+        margin-left: 213px
+      &__logo
+        align-self: start
+      .footer
+      &__logo
+        grid-row: 1 / 2
+      &__social
+        &-network
+          grid-row: 1 / 2
+          grid-column: span 4
+          align-self: center
+      &__contact
+        &-details
+          grid-row: 3 
+          grid-column: span 4
+        &-form
+          grid-column: span 3
+          grid-row: 4
+      &__categories
+        grid-row: 2 / 3
+      &__legal
+        margin-left: 0
+      &__additional
+        grid-column: span 2
+        margin-left: 95px
+      &__input
+        flex-basis: 100%
+        width: auto
+        margin-right: 0
+      &__message
+        width: auto
+      &__required
+        margin-left: 356px    
+        margin-top: -100px
+      &__form
+        display: grid
+      &__info
+        &-wrapper
+          margin-left: 0
+        &-pay
+          margin-left: 48px
+        
+      &__button
+        margin-bottom: 50px
+      
+        
+        
       
 
 @media  ( max-width: 768px )
@@ -145,7 +193,7 @@
      
     
     .newsletter
-      max-width: 576px
+      
       width: 100%
       &-wrapper
         flex-direction: column

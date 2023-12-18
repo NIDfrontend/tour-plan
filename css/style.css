@@ -965,7 +965,7 @@ template {
 }
 .footer__social-network {
   display: flex;
-  align-content: start;
+  align-items: start;
   grid-row: 2/4;
   grid-column: span 2;
 }
@@ -1099,18 +1099,7 @@ template {
     height: 230px;
   }
   .footer__input {
-    flex-basis: 100%;
-  }
-  .footer__message {
-    width: 256px;
-  }
-  .footer__form {
-    position: relative;
-  }
-  .footer__button {
-    position: absolute;
-    left: -1px;
-    top: 264px;
+    width: auto;
   }
 }
 @media (max-width: 992px) {
@@ -1175,6 +1164,65 @@ template {
   .card {
     width: 340px;
     height: 250px;
+  }
+  .footer__info-wrapper {
+    margin-left: 0;
+  }
+  .footer__required {
+    margin-left: 213px;
+  }
+  .footer__logo {
+    align-self: start;
+  }
+  .footer__logo {
+    grid-row: 1/2;
+  }
+  .footer__social-network {
+    grid-row: 1/2;
+    grid-column: span 4;
+    align-self: center;
+  }
+  .footer__contact-details {
+    grid-row: 3;
+    grid-column: span 4;
+  }
+  .footer__contact-form {
+    grid-column: span 3;
+    grid-row: 4;
+  }
+  .footer__categories {
+    grid-row: 2/3;
+  }
+  .footer__legal {
+    margin-left: 0;
+  }
+  .footer__additional {
+    grid-column: span 2;
+    margin-left: 95px;
+  }
+  .footer__input {
+    flex-basis: 100%;
+    width: auto;
+    margin-right: 0;
+  }
+  .footer__message {
+    width: auto;
+  }
+  .footer__required {
+    margin-left: 356px;
+    margin-top: -100px;
+  }
+  .footer__form {
+    display: grid;
+  }
+  .footer__info-wrapper {
+    margin-left: 0;
+  }
+  .footer__info-pay {
+    margin-left: 48px;
+  }
+  .footer__button {
+    margin-bottom: 50px;
   }
 }
 @media (max-width: 768px) {
@@ -1255,7 +1303,6 @@ template {
     width: 100%;
   }
   .newsletter {
-    max-width: 576px;
     width: 100%;
   }
   .newsletter-wrapper {
