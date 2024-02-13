@@ -78,8 +78,6 @@
         margin-left: 213px
       &__logo
         align-self: start
-      .footer
-      &__logo
         grid-row: 1 / 2
       &__social
         &-network
@@ -99,10 +97,10 @@
         margin-left: 0
       &__additional
         grid-column: span 2
-        margin-left: 95px
+        
       &__input
         flex-basis: 100%
-        width: auto
+        max-width: 100%
         margin-right: 0
       &__message
         width: auto
@@ -132,16 +130,44 @@
       padding-top: 78px
         
     .navbar
-      
-        
-      &__search, &__user
-          display: none
+      &__mobile
+        &_fixed
+          position: fixed
+          left: 0
+          top: 0
+          z-index: 15
+          width: 100%
+      &__user, &__search
+        &_mobile
+          &_hidden
+            display: none
+          &_visible
+            display: flex
+      &__user
+        flex-direction: column
+        justify-content: center
+ 
       &-bottom
         display: none
+        position: fixed
+        left: 0
+        right: 0
+        bottom: 0
+        top: 78px
+        padding-top: 30px
+        &_visible
+          display: block
+      &-menu
+        flex-direction: column
+        &__item
+          margin-bottom: 20px
+          &_mobile
+            &_visible
+              display: block
     .search
         &__input
             width: 340px
-
+      
     .menu
         &-button
             display: flex
@@ -158,6 +184,19 @@
                 width: 16px
                 height: 1px
                 background-color: $text-color
+    .user
+      &__name
+        &_light
+          color: $light
+          margin-left: 0
+          margin-top: 10px
+      &__avatar
+        &_center
+          width: 40px
+          height: 40px
+          margin-right: 0
+          border-radius: 50%
+          object-fit: cover
     .stars
         flex-basis: auto
     .hotel
@@ -223,7 +262,7 @@
     .card
       width: 48%
       height: 255px
-
+    .footer
 
 
 @media ( max-width: 576px )
@@ -256,7 +295,35 @@
       padding-bottom: 60px
       &__title
         margin-bottom: 40px
-    
+    .footer
+      &-wrapper
+        grid-template-columns: 1fr
+      &__logo
+        grid-row: 1
+        grid-column: 1
+      &__social
+        &-network
+          grid-row: 2
+          grid-column: 1
+      &__additional
+        grid-row: 3
+        grid-column: 1
+      &__categories
+        grid-row: 4
+        grid-column: 1
+      &__legal
+        grid-row: 5
+        grid-column: 1
+      &__contact
+        &-details
+          grid-row: 6
+          grid-column: 1
+        &-form
+          grid-row: 7
+          grid-column: 1
+      &__info
+        grid-row: 8
+        grid-column: 1
       
           
             

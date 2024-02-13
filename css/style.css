@@ -51,6 +51,9 @@ img {
   font-size: 14px;
   line-height: 18px;
 }
+.navbar-menu__item_mobile_visible {
+  display: none;
+}
 .navbar-bottom {
   background-color: #0A223D;
 }
@@ -1173,8 +1176,6 @@ template {
   }
   .footer__logo {
     align-self: start;
-  }
-  .footer__logo {
     grid-row: 1/2;
   }
   .footer__social-network {
@@ -1198,11 +1199,10 @@ template {
   }
   .footer__additional {
     grid-column: span 2;
-    margin-left: 95px;
   }
   .footer__input {
     flex-basis: 100%;
-    width: auto;
+    max-width: 100%;
     margin-right: 0;
   }
   .footer__message {
@@ -1233,11 +1233,43 @@ template {
   body {
     padding-top: 78px;
   }
-  .navbar__search, .navbar__user {
+  .navbar__mobile_fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 15;
+    width: 100%;
+  }
+  .navbar__user_mobile_hidden, .navbar__search_mobile_hidden {
     display: none;
+  }
+  .navbar__user_mobile_visible, .navbar__search_mobile_visible {
+    display: flex;
+  }
+  .navbar__user {
+    flex-direction: column;
+    justify-content: center;
   }
   .navbar-bottom {
     display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 78px;
+    padding-top: 30px;
+  }
+  .navbar-bottom_visible {
+    display: block;
+  }
+  .navbar-menu {
+    flex-direction: column;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
+  }
+  .navbar-menu__item_mobile_visible {
+    display: block;
   }
   .search__input {
     width: 340px;
@@ -1258,6 +1290,19 @@ template {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+  .user__name_light {
+    color: #fff;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .user__avatar_center {
+    width: 40px;
+    height: 40px;
+    margin-right: 0;
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .stars {
     flex-basis: auto;
@@ -1376,5 +1421,40 @@ template {
   }
   .activities__title {
     margin-bottom: 40px;
+  }
+  .footer-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .footer__logo {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  .footer__social-network {
+    grid-row: 2;
+    grid-column: 1;
+  }
+  .footer__additional {
+    grid-row: 3;
+    grid-column: 1;
+  }
+  .footer__categories {
+    grid-row: 4;
+    grid-column: 1;
+  }
+  .footer__legal {
+    grid-row: 5;
+    grid-column: 1;
+  }
+  .footer__contact-details {
+    grid-row: 6;
+    grid-column: 1;
+  }
+  .footer__contact-form {
+    grid-row: 7;
+    grid-column: 1;
+  }
+  .footer__info {
+    grid-row: 8;
+    grid-column: 1;
   }
 }/*# sourceMappingURL=style.css.map */
